@@ -10,7 +10,7 @@ import javax.ws.rs.Produces;
 @Path("/hello")
 public class HelloWorldEndpoint {
     @GET
-    @Produces("text/plain")
+    @Produces("text/plain")  
     public Response doGet() {
         return Response.ok("Version: V1").build();
     }
